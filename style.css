@@ -1,0 +1,211 @@
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* all global calsses/elements*/
+
+.contain{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+.button1{
+  height: 38px;
+  background: #2f6df3;
+  border: 0;
+  padding: 0 20px;
+  color:white;
+}
+
+.dark{
+  padding: 15px;
+  background:#17611d ;
+  color:white;
+  margin: 10px 0;
+}
+
+/* Header **/
+header{
+  background-color: #17611d;
+  color:#fff;
+  padding-top: 30px;
+  min-height:70px;
+  border-bottom: #2f6df3 3px solid;
+  }
+  header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+  
+  header li{
+    display:inline;
+    padding: 0 20px;
+    font-weight: bold;   
+  }
+
+  header #brand-name{
+    float: left;
+  }  
+  header #brand-name h1{
+    margin: 0;
+  }
+
+header nav{
+  float:right;
+  margin-top: 14px;
+}
+
+header .highlight, header .topnav a{
+  color:#2f6df3
+}
+
+header a:hover{
+  color: #fff;
+}
+
+/*Showcase*/
+
+#showcase{
+  min-height: 400px;
+  background:url('./showcase.jpg') no-repeat 0 -100px;
+  background-size:100%;
+  text-align: center;
+  color:white;
+}
+#showcase h1{
+  margin: 100px 0 10px 0;
+  font-size: 55px;
+}
+#showccase p{
+  font-size: 20px;
+}
+
+#sign-up{
+  padding: 15px;
+  color: #fff;
+  background: #17611d;
+}
+#sign-up h1{
+  float: left;
+}
+#sign-up form{
+  float:right;
+  margin-top: 20px;
+}
+#sign-up input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/*boxes*/
+
+#boxes{
+  margin-top: 20px;
+}
+
+.box{
+  float:left;
+  width:30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/*About Page*/
+
+/*Main column*/
+article#main-col{
+  float: left;
+  width:68%;
+}
+
+/*Sidebar*/
+aside#sidebar{
+  float: right;
+  width: 28%;
+  margin-top: 10px;
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width: 90%;
+  padding: 5px;
+}
+
+/*Services*/
+
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border: #17611d solid 1px;
+  margin-bottom: 5px;
+  background-color: #e6e6e6;
+}
+
+
+
+
+
+/*Footer*/
+
+footer{
+  padding: 20px;
+  color: #fff;
+  background: #2f6df3;
+
+}
+
+
+/*Media Queries*/
+@media(max-width:768px){
+  header #brand-name,
+  header nav,
+  header nav li,
+  #sign-up h1,
+  #sign-up form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+  #showcase h1{
+    margin-top: 40px;
+  }
+  #sign-up button, .quote button, .quote input, .quote textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  #sign-up form input[type="email"]{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+
+
+}
+
+
+
+
+
+
